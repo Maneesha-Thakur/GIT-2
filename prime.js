@@ -1,9 +1,11 @@
 let num=10
-let flag=true
-
-for(let i=2;i<num;i++){
+let count=0;
+for(let i=1;i<=num;i++){
     if(num%i==0){
-        flag=false
-        break;
+        count++
     }
+}if(count==2){
+    console.log("Prime")
+}else{
+    console.log("Not Prime")
 }
